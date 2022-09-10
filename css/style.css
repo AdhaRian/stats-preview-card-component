@@ -1,0 +1,263 @@
+/* reset css */
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+/* Links */
+
+a,
+a:link,
+a:visited {
+  /* color: inherit; */
+  text-decoration: none;
+  /* display: inline-block; */
+}
+
+a:hover {
+  /* color: inherit; */
+  text-decoration: none;
+}
+
+/* Common */
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-size: inherit;
+    font-weight: inherit;
+} */
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type="submit"] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+/* reset ends */
+
+:root {
+  --Mainbg: hsl(233, 47%, 7%);
+  --Cardbg: hsl(244, 38%, 16%);
+  --Accent: hsl(277, 64%, 61%);
+  --White: hsl(0, 0%, 100%);
+  --TransparentWhite1: hsla(0, 0%, 100%, 0.75);
+  --TransparentWhite2: hsla(0, 0%, 100%, 0.6);
+  --Inter: "Inter", sans-serif;
+  --LexendDeca: "Lexend Deca", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  min-height: 100vh;
+  font-family: var(--LexendDeca);
+  font-weight: 400;
+  color: var(--TransparentWhite1);
+  font-size: 15px;
+  background-color: var(--Mainbg);
+}
+
+.container {
+  display: flex;
+  background-color: var(--Cardbg);
+  max-width: 1110px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 2rem;
+}
+
+.info {
+  margin: 4rem 5rem 4rem 4rem;
+}
+
+.info p {
+  line-height: 1.8;
+  margin-right: 2rem;
+}
+
+h1 {
+  font-size: 35px;
+  margin-bottom: 1.5rem;
+}
+
+h1,
+h2 {
+  font-family: var(--Inter);
+  color: var(--White);
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+span {
+  color: var(--Accent);
+}
+
+.secondary-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-right: 3rem;
+}
+
+.secondary-info p {
+  color: var(--TransparentWhite2);
+  font-weight: 400;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  max-width: 100%;
+  mix-blend-mode: multiply;
+  opacity: 0.8;
+}
+
+.image {
+  background-color: var(--Accent);
+  width: 100%;
+}
+
+.attribution {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 11px;
+}
+
+.attribution p {
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1115px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 500px;
+    margin: 2rem;
+  }
+
+  .info {
+    margin: 4rem;
+    text-align: center;
+  }
+
+  .info p {
+    line-height: 1.8;
+    margin-right: 0;
+  }
+
+  .secondary-info {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-right: 0;
+  }
+
+  .ctq {
+    margin-top: 2rem;
+  }
+
+  .image {
+    width: 100%;
+  }
+}
