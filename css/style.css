@@ -141,7 +141,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2rem;
+  margin: 1rem;
   min-height: 100vh;
   font-family: var(--LexendDeca);
   font-weight: 400;
@@ -235,8 +235,12 @@ img {
     margin: 1rem;
   }
 
+  h1 {
+    font-size: 20px;
+  }
+
   .info {
-    margin: 4rem;
+    margin: 3rem;
     text-align: center;
   }
 
